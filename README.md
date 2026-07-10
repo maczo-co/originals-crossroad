@@ -16,7 +16,7 @@ stream, per `libs/provably_fair/fair.py`) lives ONCE in the shared engine
 | ⚖️ Published odds | <https://verify.maczo.co/originals/paytables/crossroad.json> |
 | 🔧 Shared engine | <https://github.com/maczo-co/originals-verify> |
 
-- **Bias class:** `uniform` — uses a uniform Fisher-Yates / without-replacement draw — no modulo bias.
+- **Bias class:** `uniform` — maps words without a biased modulo reduction (bit extraction, or a uniform Fisher-Yates / without-replacement draw) — no modulo bias.
 - **Recipe:** death-set = shuffle(20)[:deaths]; cross lanes 0..k−1 until a death index is hit; multiplier = rtp·∏(20−i)/(20−deaths−i).
 
 ## Files
